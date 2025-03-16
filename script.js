@@ -16,7 +16,10 @@ let answer;
 
 //  Gets human answer to rock/paper/scissors
 function getHumanChoice(choice){
-    switch(choice) {
+
+    let lowerText = choice.toLowerCase();
+
+    switch(lowerText) {
         case "rock":
             answer = "rock";
             break;
@@ -27,17 +30,18 @@ function getHumanChoice(choice){
             answer = "scissors";
             break;
     }
-    return answer;
+}
+
+function playRound(human, computer){
+
 }
 
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(humanChoice, computerChoice){
+getHumanChoice(message);
+const humanSelection = answer;
 
-}
-
-const humanSelection = getHumanChoice();
 const computerSelection = getComputerChoice();
 
 playRound(humanSelection, computerSelection);
