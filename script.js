@@ -46,8 +46,6 @@ function playRound(human, computer){
     }
 }
 
-const computerSelection = getComputerChoice();
-
 function playGame(){
     for (let i = 0; i < 5; i++) {
         // Get player answer
@@ -62,7 +60,6 @@ function playGame(){
     }
 }
 
-
 function scoreGame(human, computer){
     if (human > computer) {
         console.log(`Congratulations! You win! Your score was ${human} and the computer scored ${computer}.`);
@@ -73,6 +70,7 @@ function scoreGame(human, computer){
     }
 }
 
+const computerSelection = getComputerChoice();
 playGame();
 scoreGame(humanScore, computerScore);
 
